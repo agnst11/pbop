@@ -11,4 +11,4 @@ h = Hitung()
 
 h.tampilkanHitung()
 h.tampilkanHitung()
-h._Hitung__angkaRahasia
+print(h._Hitung__angkaRahasia)

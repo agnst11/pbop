@@ -15,4 +15,4 @@ tes = Sport(2, 2, '1300 HP', 'Merah')
 
 
 # memanggil private
-print(tes._Mobil__warna)
+print(tes._Sport__warna)
