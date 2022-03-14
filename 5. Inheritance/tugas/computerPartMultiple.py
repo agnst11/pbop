@@ -1,10 +1,7 @@
 # parent
-
 class processor():
     def __init__(self, jenisProcessor) -> None:
         self.processor = jenisProcessor
-    
-
 
 class penyimpananSementara():
     def __init__(self, ram) -> None:
@@ -13,7 +10,7 @@ class penyimpananSementara():
 class penyimpanan():
     def __init__(self, storage) -> None:
         self.storage = storage
-
+# child
 class computerPart(processor, penyimpananSementara, penyimpanan):
     def __init__(self, jenisProcessor, ram, storage) -> None:
         processor.__init__(self, jenisProcessor)

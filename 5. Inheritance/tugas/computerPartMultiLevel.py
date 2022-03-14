@@ -3,18 +3,6 @@ class computerPart:
         self.nama = nama
         self.harga = harga
 
-# class processor(computerPart):
-#     def __init__(self,pabrikan,nama,harga,jumlahCore, speed):
-#         super().__init__(pabrikan, nama, "Processor", harga)
-#         self.jumlahCore = jumlahCore
-#         self.speed = speed
-
-
-# class ram(computerPart):
-#     def __init__(self,pabrikan, nama, harga, kapasitas):
-#         super().__init__(pabrikan,nama,"RAM",harga)
-#         self.kapasitas = kapasitas
-
 class storage(computerPart):
     def __init__(self, nama, harga, jenis):
         super().__init__(nama, harga)
@@ -29,5 +17,4 @@ class hdd(storage):
 
 pc = hdd('Toshiba',500000,'1 TB')
 
-
-print(pc.jenis)
+print(f'Computer dengan penyimpanan jenis {pc.jenis} yang berkapasitas {pc.kapasitas}')
