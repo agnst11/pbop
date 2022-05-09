@@ -19,3 +19,8 @@ print('Daftar Menu Healthy Fruits')
 
 for i in pilihanMenu:
     print('{} harga Rp. {} , {}'.format(i.nama, i.harga, i.deskripsi))
+
+
+d = input("masukan makanan : ")
+
+pilihanMenu.insert(d)

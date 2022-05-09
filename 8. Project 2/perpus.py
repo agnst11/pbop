@@ -240,7 +240,4 @@ def kembalikan_buku():
                 f.write(judul_buku[i]+","+pengarang[i]+","+str(jumlah_stok[i])+","+"Rp"+harga[i]+"\n")
 
 
-
-
-
 menu_awal()
