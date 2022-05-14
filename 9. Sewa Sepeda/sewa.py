@@ -20,25 +20,26 @@ while True:
     if menu == '1':
         os.system('cls')
         data = s.showItem()
-        x = 1
-        print('~'*22,'LIST SEPEDA','~'*22)
-        print('>\tID \t| Warna \t| Harga Sewa \t| Status \n')
-        for i in data:
-            print(f'> {x}. {i[0]} \t| {i[1]}  \t| {i[2]}  \t| {i[3]} ')
-            x += 1
-        pilih = int(input('\n-> Pilih sepeda : '))
-        if data[pilih-1][3] == 'rusak':
-            print(Fore.RED+'> Maaf sepeda sedang dalam perbaikan'+Style.RESET_ALL)
-        
-        elif data[pilih-1][3] == 'disewa':
-            print(Fore.RED+'> Maaf sepeda sudah disewa'+Style.RESET_ALL)
-        
-        else:
-            nama = input('-> Masukan Nama : ')
-            nik = input('-> Masukan NIK : ')
-            noHp = input('-> Masukan noHP : ')
-            durasi = int(input('-> Durasi Sewa/Jam : '))
-            rental = sewa(nama,nik,noHp,data[pilih - 1][0],data[pilih-1][2],durasi)
+        try:
+            pilih = int(input('\n-> Pilih sepeda : '))
+            if data[pilih-1][3] == 'rusak':
+                print(Fore.RED+'> Maaf sepeda sedang dalam perbaikan'+Style.RESET_ALL)
+            
+            elif data[pilih-1][3] == 'disewa':
+                print(Fore.RED+'> Maaf sepeda sudah disewa'+Style.RESET_ALL)
+            
+            else:
+                nama = input('-> Masukan Nama : ')
+                nik = input('-> Masukan NIK : ')
+                noHp = input('-> Masukan noHP : ')
+                durasi = int(input('-> Durasi Sewa/Jam : '))
+                rental = sewa(nama,nik,noHp,data[pilih - 1][0],data[pilih-1][2],durasi)
+
+        except:
+            print(Fore.RED+'Oops terjadi kesalahan input'+Style.RESET_ALL)
+            print(Fore.RED+'Silahkan ulangi dari awal'+Style.RESET_ALL)
+            input('...')
+            continue
 
         input('..')
 
@@ -81,7 +82,8 @@ while True:
 > 2. Hapus
 > 3. Edit harga
 > 4. Edit status
-> 5. Keluar
+> 5. Lihat Data
+> 6. Keluar
             ''')
 
                 menu = input('-> Pilih Menu : ')
@@ -96,14 +98,16 @@ while True:
 
                 elif menu == '2':
                     os.system('cls')
-                    id = input('-> Masukan ID Sepeda : ')
+                    s.showItem()
+                    id = input('\n-> Masukan ID Sepeda : ')
                     s.delItem(s,id)
 
                     input('..')
 
                 elif menu == '3':
                     os.system('cls')
-                    id = input('-> Masukan ID Sepeda : ')
+                    s.showItem()
+                    id = input('\n-> Masukan ID Sepeda : ')
                     data = s.searchItem(s,id)
                     if data != []:
                         print('\tID \t| Warna \t| Harga Sewa \t| Status \n')
@@ -117,7 +121,8 @@ while True:
 
                 elif menu == '4':
                     os.system('cls')
-                    id = input('-> Masukan ID Sepeda : ')
+                    s.showItem()
+                    id = input('\n-> Masukan ID Sepeda : ')
                     data = s.searchItem(s,id)
                     if data != []:
                         print('\tID \t| Warna \t| Harga Sewa \t| Status \n')
@@ -130,6 +135,13 @@ while True:
                     input('..')
                     
                 elif menu == '5':
+                    os.system('cls')
+                    s.showItem()
+
+                    input('..')
+
+
+                elif menu == '6':
                     break
                 else:
                     print('> Menu tidak tersedia')

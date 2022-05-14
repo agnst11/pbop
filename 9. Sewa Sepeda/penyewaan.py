@@ -46,6 +46,12 @@ class sepeda:
     def showItem():
         cur.execute('SELECT * FROM `sepeda`')
         data = cur.fetchall()
+        x = 1
+        print('~'*22,'LIST SEPEDA','~'*22)
+        print('>\tID \t| Warna \t| Harga Sewa \t| Status \n')
+        for i in data:
+            print(f'> {x}. {i[0]} \t| {i[1]}  \t| {i[2]}  \t| {i[3]} ')
+            x += 1
         return data
         # print(data)
 
@@ -82,7 +88,7 @@ class sewa(penyewa):
 
     def cetakStruk(self):
         time = datetime.now()
-        with open('Sewa-'+self.nik+'-'+self.nama+str(time.hour)+str(time.minute)+'.txt', 'w+') as f:
+        with open('Sewa-'+self.nik+'-'+self.idSepeda+'.txt', 'w+') as f:
             f.write(f'''
     Nama Penyewa: {self.nama}
     NIK Penyewa : {self.nik}
@@ -130,11 +136,10 @@ class sewa(penyewa):
 
 
     def kembalikan(self,nik,nama,idSepeda):
-        time = datetime.now()
         self.nik = nik
         self.nama = nama
         self.idSepeda = idSepeda
-        with open('Penembalian-'+self.nik+'-'+self.nama+str(time.hour)+str(time.minute)+'.txt', 'a') as f:
+        with open('Sewa-'+self.nik+'-'+self.idSepeda+'.txt', 'a') as f:
             # f.writelines()
             f.writelines(f'''
         {'~'*15} Pengembalian Sepeda {'~'*15}
