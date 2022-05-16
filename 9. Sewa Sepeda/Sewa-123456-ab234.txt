@@ -1,0 +1,9 @@
+
+    Nama Penyewa: dwiki
+    NIK Penyewa : 123456
+    No Hp.      : 0852412312
+    ID Sepeda   : ab234
+    Sewa/jam    : 10000
+    Durasi Sewa : 1 
+    Waktu Sewa  : 2022-05-16 19:53:10.399959
+

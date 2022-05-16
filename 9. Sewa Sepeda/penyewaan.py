@@ -55,12 +55,12 @@ class sepeda:
         return data
         # print(data)
 
-    def updateItem(self, id, harga, ubah):
+    def updateItem(self, id, data, ubah):
         self.id = id
-        self.harga = harga
+        self.data = data
         self.ubah = ubah
         try:
-            cur.execute(f"UPDATE `sepeda` SET `{self.ubah}`='{self.harga}' WHERE `id` = '{self.id}'")
+            cur.execute(f"UPDATE `sepeda` SET `{self.ubah}`='{self.data}' WHERE `id` = '{self.id}'")
             db.commit()
             print(Fore.GREEN+'> Data berhasil diupdate'+Style.RESET_ALL)
         except:

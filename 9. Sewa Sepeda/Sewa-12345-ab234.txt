@@ -1,0 +1,22 @@
+
+    Nama Penyewa: danu
+    NIK Penyewa : 12345
+    No Hp.      : 12312412
+    ID Sepeda   : ab234
+    Sewa/jam    : 11000
+    Durasi Sewa : 2 
+    Waktu Sewa  : 2022-05-16 19:37:33.688905
+
+
+        ~~~~~~~~~~~~~~~ Pengembalian Sepeda ~~~~~~~~~~~~~~~
+        Waktu Kembali       : 2022-5-16 19:39:59
+        Biaya Sewa Sepeda   : 22000
+        Denda Keterlambatan : 0
+        Total Tagihan       : 22000
+
+        Uang yang dibayarkan: 30000
+        Kembalian           : 8000
+
+        ~~~~~~~~~~~~~~~~~~ Terima Kasih  ~~~~~~~~~~~~~~~~~~
+        
+         

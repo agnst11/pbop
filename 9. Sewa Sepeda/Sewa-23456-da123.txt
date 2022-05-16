@@ -1,0 +1,22 @@
+
+    Nama Penyewa: haru
+    NIK Penyewa : 23456
+    No Hp.      : 1241212
+    ID Sepeda   : da123
+    Sewa/jam    : 15000
+    Durasi Sewa : 2 
+    Waktu Sewa  : 2022-05-16 19:38:13.524187
+
+
+        ~~~~~~~~~~~~~~~ Pengembalian Sepeda ~~~~~~~~~~~~~~~
+        Waktu Kembali       : 2022-5-16 19:54:2
+        Biaya Sewa Sepeda   : 30000
+        Denda Keterlambatan : 0
+        Total Tagihan       : 30000
+
+        Uang yang dibayarkan: 30000
+        Kembalian           : 0
+
+        ~~~~~~~~~~~~~~~~~~ Terima Kasih  ~~~~~~~~~~~~~~~~~~
+        
+         
