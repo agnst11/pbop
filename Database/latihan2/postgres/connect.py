@@ -1,8 +1,13 @@
-import sqlite3
+import psycopg2
 
-with sqlite3.connect('database/Uteyeah.db') as db:
-    cur = db.cursor()
+db = psycopg2.connect(
+    host="localhost",
+    user="d2l",
+    password="@d2l",
+    database="uteyeah"
+)
 
+cur = db.cursor()
 
 cur.execute('''CREATE TABLE IF NOT EXISTS Dosen (
     Kode_Dos VARCHAR(3) PRIMARY KEY NOT NULL,
@@ -10,6 +15,13 @@ cur.execute('''CREATE TABLE IF NOT EXISTS Dosen (
     Alamat_Dos VARCHAR(125),
     No_Telp VARCHAR(15)
     );''')
+
+cur.execute('''CREATE TABLE IF NOT EXISTS MataKuliah (
+    Kode_MK VARCHAR(3) PRIMARY KEY NOT NULL,
+    Nama_MK VARCHAR(40),
+    SKS VARCHAR(1),
+    Semester VARCHAR(1)    
+);''')
 
 cur.execute('''CREATE TABLE IF NOT EXISTS Kuliah (
     Kode_MK VARCHAR(3) ,
@@ -20,11 +32,5 @@ cur.execute('''CREATE TABLE IF NOT EXISTS Kuliah (
     FOREIGN KEY(Kode_MK) REFERENCES MataKuliah (Kode_MK)
     );''')
 
-cur.execute('''CREATE TABLE IF NOT EXISTS MataKuliah (
-    Kode_MK VARCHAR(3) PRIMARY KEY NOT NULL,
-    Nama_MK VARCHAR(40),
-    SKS VARCHAR(1),
-    Semester VARCHAR(1)    
-);''')
 
-cur.execute("PRAGMA foreign_keys = OFF;")
+db.commit()
