@@ -1,0 +1,22 @@
+
+    Nama Penyewa: Danu
+    NIK Penyewa : 45678
+    No Hp.      : 0876124124
+    ID Sepeda   : da123
+    Sewa/jam    : 15000
+    Durasi Sewa : 2 
+    Waktu Sewa  : 2022-05-17 17:28:28.357264
+
+
+        ~~~~~~~~~~~~~~~ Pengembalian Sepeda ~~~~~~~~~~~~~~~
+        Waktu Kembali       : 2022-5-17 17:29:10
+        Biaya Sewa Sepeda   : 30000
+        Denda Keterlambatan : 0
+        Total Tagihan       : 30000
+
+        Uang yang dibayarkan: 30000
+        Kembalian           : 0
+
+        ~~~~~~~~~~~~~~~~~~ Terima Kasih  ~~~~~~~~~~~~~~~~~~
+        
+         

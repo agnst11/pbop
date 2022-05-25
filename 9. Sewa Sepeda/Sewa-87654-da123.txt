@@ -1,0 +1,22 @@
+
+    Nama Penyewa: Andi
+    NIK Penyewa : 87654
+    No Hp.      : 942385235
+    ID Sepeda   : da123
+    Sewa/jam    : 10000
+    Durasi Sewa : 2 
+    Waktu Sewa  : 2022-05-21 09:44:08.198917
+
+
+        ~~~~~~~~~~~~~~~ Pengembalian Sepeda ~~~~~~~~~~~~~~~
+        Waktu Kembali       : 2022-5-21 9:44:28
+        Biaya Sewa Sepeda   : 20000
+        Denda Keterlambatan : 0
+        Total Tagihan       : 20000
+
+        Uang yang dibayarkan: 20000
+        Kembalian           : 0
+
+        ~~~~~~~~~~~~~~~~~~ Terima Kasih  ~~~~~~~~~~~~~~~~~~
+        
+         

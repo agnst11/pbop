@@ -1,0 +1,22 @@
+
+    Nama Penyewa: nopal
+    NIK Penyewa : 98765
+    No Hp.      : 0965235
+    ID Sepeda   : da123
+    Sewa/jam    : 15000
+    Durasi Sewa : 1 
+    Waktu Sewa  : 2022-05-18 11:23:56.246898
+
+
+        ~~~~~~~~~~~~~~~ Pengembalian Sepeda ~~~~~~~~~~~~~~~
+        Waktu Kembali       : 2022-5-18 11:26:43
+        Biaya Sewa Sepeda   : 15000
+        Denda Keterlambatan : 0
+        Total Tagihan       : 15000
+
+        Uang yang dibayarkan: 20000
+        Kembalian           : 5000
+
+        ~~~~~~~~~~~~~~~~~~ Terima Kasih  ~~~~~~~~~~~~~~~~~~
+        
+         

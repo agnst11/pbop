@@ -1,7 +1,10 @@
 from penyewaan import sepeda, cur
 
-s = sepeda
+class laporan:
+    def lihatTransaksi(self, dari, sampai):
+        pass
 
-data = s.showItem()
 
-print(data)
+while True:
+    print('Lihat Transaksi')
+    dari = input('> dari tanggal : ')
