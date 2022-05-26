@@ -13,13 +13,13 @@ cur.execute('''CREATE TABLE IF NOT EXISTS jabatan (
 
 
 cur.execute('''CREATE TABLE IF NOT EXISTS Golongan (
-	kode_golongan	VARCHAR(2),
-	nama_golongan	VARCHAR(10),
-	tunjangan_suami	INTEGER(10),
-	tunjangan_anak	INTEGER(10),
-	uang_makan	INTEGER(10),
+	kode_golongan VARCHAR(2),
+	nama_golongan VARCHAR(10),
+	tunjangan_suami INTEGER(10),
+	tunjangan_anak INTEGER(10),
+	uang_makan INTEGER(10),
 	uang_lembur	INTEGER(10),
-	akses	INTEGER(10),
+	akses INTEGER(10),
 	PRIMARY KEY(kode_golongan));''')
 
 cur.execute('''CREATE TABLE IF NOT EXISTS Pegawai (
